@@ -15,6 +15,7 @@ const banner = `
         \\____|__  /____/|____/____/_______  /\\___  >\\___  >
                 \\/                        \\/     \\/     \\/ 
             Forum Software - Backend
+            Running on Port: ${PORT}
 
 `
 
@@ -30,7 +31,7 @@ async function bootstrap() {
     const httpServer = createServer(app);
 
     httpServer.listen(PORT, () => {
-        console.log(`🚀 Server running on PORT ${PORT}`);
+        console.log(`🚀 Server started`);
     });
 }
 
