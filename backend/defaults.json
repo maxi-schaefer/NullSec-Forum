@@ -1,0 +1,8 @@
+{
+    "categories": [
+        { "name": "General", "description": "This is the general Category" },
+        { "name": "Programming", "description": "This is the Programming Category" },
+        { "name": "Tools", "description": "This is the Tools Category" },
+        { "name": "Security", "description": "This is the Security Category" }
+    ]
+}

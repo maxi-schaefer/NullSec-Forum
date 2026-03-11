@@ -31,7 +31,7 @@ export async function requireAuth(req: Request, res: Response, next: NextFunctio
     }
 }
 
-export async function authorize(...roles: string[]) {
+export function authorize(...roles: string[]) {
     return async (req: Request, res: Response, next: NextFunction) => {
         const user = await UserModel.findById(req.user?._id);
         if(!user || !roles.includes(user.role)) {
